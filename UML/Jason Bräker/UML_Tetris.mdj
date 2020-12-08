@@ -6365,9 +6365,9 @@
 											"font": "Arial;13;1",
 											"left": 797,
 											"top": 143,
-											"width": 54.17724609375,
+											"width": 57.7890625,
 											"height": 13,
-											"text": "Spielfled"
+											"text": "SpielFeld"
 										},
 										{
 											"_type": "LabelView",
@@ -6400,7 +6400,7 @@
 									"font": "Arial;13;0",
 									"left": 792,
 									"top": 136,
-									"width": 64.17724609375,
+									"width": 67.7890625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF2QWPhWbO6l54="
@@ -6427,7 +6427,7 @@
 									"font": "Arial;13;0",
 									"left": 792,
 									"top": 161,
-									"width": 64.17724609375,
+									"width": 67.7890625,
 									"height": 10
 								},
 								{
@@ -6442,7 +6442,7 @@
 									"font": "Arial;13;0",
 									"left": 792,
 									"top": 171,
-									"width": 64.17724609375,
+									"width": 67.7890625,
 									"height": 10
 								},
 								{
@@ -6482,7 +6482,7 @@
 							"containerChangeable": true,
 							"left": 792,
 							"top": 136,
-							"width": 64.17724609375,
+							"width": 67.7890625,
 							"height": 45,
 							"nameCompartment": {
 								"$ref": "AAAAAAF2QWPhWbO5pGU="
@@ -9444,7 +9444,7 @@
 					"_parent": {
 						"$ref": "AAAAAAF2QTbtxYqa9vI="
 					},
-					"name": "Spielfled",
+					"name": "SpielFeld",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",
