@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class StartScreen here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JBR 
+ * @version 1
  */
 public class StartScreen extends World
 {
@@ -15,7 +15,17 @@ public class StartScreen extends World
      */
     public StartScreen()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(400, 400, 1);
+        prepare();
     }
+    
+    /**
+     * Bereitet die Welt vor. Erzeugt einen Startknopf.
+     */
+    public void prepare()
+    {
+       Buttons play = new StartButton();
+       addObject(play, 250, 300);
+    }
+    
 }
