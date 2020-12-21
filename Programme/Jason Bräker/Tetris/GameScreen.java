@@ -22,6 +22,12 @@ public class GameScreen extends World
     
     private void prepare()
     {
-        showText("testtesttest", 250, 200);
+       showText("testtesttest", 250, 200);
+        
+       Blocks oBlock = new OBlock();
+       addObject(oBlock, 200, 450);
+       
+       Blocks lBlock = new LBlock();
+       addObject(lBlock, 250, 450);
     }
 }

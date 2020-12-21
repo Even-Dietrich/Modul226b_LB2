@@ -15,7 +15,7 @@ public class StartScreen extends World
      */
     public StartScreen()
     {    
-        super(400, 400, 1);
+        super(400, 500, 1);
         prepare();
     }
     
@@ -25,7 +25,7 @@ public class StartScreen extends World
     public void prepare()
     {
        Buttons play = new StartButton();
-       addObject(play, 250, 300);
+       addObject(play, 200, 450);
     }
     
 }
