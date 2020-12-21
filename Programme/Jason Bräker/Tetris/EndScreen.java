@@ -15,7 +15,7 @@ public class EndScreen extends World
      */
     public EndScreen()
     {    
-        super(500, 600, 1);
+        super(400, 500, 1);
         prepare();
     }
     
@@ -24,8 +24,9 @@ public class EndScreen extends World
      */
     private void prepare()
     {
-        showText("Play again?", 250, 100);
+        showText("Play again?", 200, 50);
+        
         Buttons PlayAgain = new PlayButton();
-        addObject(PlayAgain, 250, 200);
+        addObject(PlayAgain, 200, 450);
     }
 }

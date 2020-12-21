@@ -24,7 +24,7 @@ public class StartScreen extends World
      */
     public void prepare()
     {
-       Buttons play = new StartButton();
+       Buttons play = new PlayButton();
        addObject(play, 200, 450);
     }
     

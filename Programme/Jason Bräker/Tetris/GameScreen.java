@@ -25,9 +25,12 @@ public class GameScreen extends World
        showText("testtesttest", 250, 200);
         
        Blocks oBlock = new OBlock();
-       addObject(oBlock, 200, 450);
+       addObject(oBlock, 200, 458);
        
-       Blocks lBlock = new LBlock();
-       addObject(lBlock, 250, 450);
+       Blocks LBlock = new LBlock();
+       addObject(LBlock, 250, 450);
+       
+       Blocks zBlock = new ZBlock();
+       addObject(zBlock, 300, 450);
     }
 }
