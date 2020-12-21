@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.Color;
 
 /**
  * Write a description of class GameScreen here.
@@ -16,7 +17,7 @@ public class GameScreen extends World
     public GameScreen()
     {    
         super(500, 600, 1);
-        getBackground().setColor(Color.GREY);
+        getBackground().setColor(Color.LIGHT_GRAY);
         getBackground().fill();
         prepare();
     }
