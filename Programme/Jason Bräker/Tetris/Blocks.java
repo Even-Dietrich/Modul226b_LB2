@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Blocks here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JBR 
+ * @version 1.0
  */
 public class Blocks extends Actor
 {
@@ -14,6 +14,38 @@ public class Blocks extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        isKeyPressed();
+        drop();
     }    
+    
+    /**
+     * 
+     */
+    public void isKeyPressed()
+    {
+        if (Greenfoot.isKeyDown("up")) 
+        {
+            turn(-90);
+        }
+        
+        /*if (Greenfoot.isKeyDown("down")) 
+        {
+            turn(90);
+        }*/
+        
+        if (Greenfoot.isKeyDown("left")) 
+        {
+            setLocation(getX()-2, getY());
+        }
+        
+        if (Greenfoot.isKeyDown("right")) 
+        {
+            setLocation(getX()+2, getY());
+        }
+    }
+    
+    public void drop()
+    {
+        setLocation(getX(), getY()+1);
+    }
 }
