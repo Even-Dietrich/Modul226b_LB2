@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class TBlock here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JBR
+ * @version 1.0
  */
 public class TBlock extends Blocks
 {
@@ -14,6 +14,7 @@ public class TBlock extends Blocks
      */
     public void act() 
     {
-        // Add your action code here.
+        isKeyPressed();
+        drop();
     }    
 }
