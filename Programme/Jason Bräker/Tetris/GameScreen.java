@@ -4,13 +4,15 @@ import greenfoot.Color;
 /**
  * Write a description of class GameScreen here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author JBR
+ * @version 1.0
  */
 public class GameScreen extends World
 {
     int spawnHeight = 0;
     int spawnPosition = 250;
+    int groundHeight = 600;
+    private int cannotspawn = 0;
     /**
      * Constructor for objects of class GameScreen.
      * 
@@ -20,22 +22,23 @@ public class GameScreen extends World
         super(500, 600, 1);
         getBackground().setColor(Color.LIGHT_GRAY);
         getBackground().fill();
-        //prepare();
+        prepare();
         spawnBlocks();
     }
     
+    public void act()
+    {
+        spawnBlocks();
+    }
     private void prepare()
     {
-       showText("testtesttest", 250, 200);
-        
-       Blocks oBlock = new OBlock();
-       addObject(oBlock, 200, 458);
-       
-       Blocks LBlock = new LBlock();
-       addObject(LBlock, 250, 450);
-       
-       Blocks zBlock = new ZBlock();
-       addObject(zBlock, 300, 450);
+       Actor ground = new Ground();
+       addObject(ground, 0, groundHeight);
+    }
+    
+    public void canNotSpawn(int torf)
+    {
+        cannotspawn= cannotspawn - torf;
     }
     
     /**
@@ -43,44 +46,49 @@ public class GameScreen extends World
      */
     public void spawnBlocks()
     {
-        int blockNumber = Greenfoot.getRandomNumber(7);
-        
-        if (blockNumber == 1)
+        if (cannotspawn == 0)    
         {
-            Blocks IBlock = new IBlock();
-            addObject(IBlock, spawnPosition, spawnHeight);
-        }
-        else if(blockNumber == 2)
-        {
-            Blocks JBlock = new JBlock();
-            addObject(JBlock, spawnPosition, spawnHeight);
-        }
-        else if(blockNumber == 3)
-        {
-            Blocks LBlock = new LBlock();
-            addObject(LBlock, spawnPosition, spawnHeight);
-        }
-        else if(blockNumber == 4)
-        {
-            Blocks OBlock = new OBlock();
-            addObject(OBlock, spawnPosition, spawnHeight);
-        }
-        else if(blockNumber == 5)
-        {
-            Blocks SBlock = new SBlock();
-            addObject(SBlock, spawnPosition, spawnHeight);
-        }
-        else if(blockNumber == 6)
-        {
-            Blocks TBlock = new TBlock();
-            addObject(TBlock, spawnPosition, spawnHeight);
-        }
-        else if(blockNumber == 7)
-        {
-            Blocks ZBlock = new ZBlock();
-            addObject(ZBlock, spawnPosition, spawnHeight);
+            // Blocks IBlock = new IBlock();
+            // addObject(IBlock, spawnPosition, spawnHeight);
+            int blockNumber = Greenfoot.getRandomNumber(7);
+            
+            if (blockNumber == 0)
+            {
+                Blocks IBlock = new IBlock();
+                addObject(IBlock, spawnPosition, spawnHeight);
+            }
+            else if(blockNumber == 1)
+            {
+                Blocks JBlock = new JBlock();
+                addObject(JBlock, spawnPosition, spawnHeight);
+            }
+            else if(blockNumber == 2)
+            {
+                Blocks LBlock = new LBlock();
+                addObject(LBlock, spawnPosition, spawnHeight);
+            }
+            else if(blockNumber == 3)
+            {
+                Blocks OBlock = new OBlock();
+                addObject(OBlock, spawnPosition, spawnHeight);
+            }
+            else if(blockNumber == 4)
+            {
+                Blocks SBlock = new SBlock();
+                addObject(SBlock, spawnPosition, spawnHeight);
+            }
+            else if(blockNumber == 5)
+            {
+                Blocks TBlock = new TBlock();
+                addObject(TBlock, spawnPosition, spawnHeight);
+            }
+            else if(blockNumber == 6)
+            {
+                Blocks ZBlock = new ZBlock();
+                addObject(ZBlock, spawnPosition, spawnHeight);
+            }
+            
+            cannotspawn = 1;
         }
     }
-    
-    
 }
