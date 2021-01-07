@@ -37,12 +37,12 @@ public class Blocks extends Actor
             
             if (Greenfoot.isKeyDown("left")) 
             {
-                setLocation(getX()-2, getY());
+                setLocation(getX()-20, getY());
             }
             
             if (Greenfoot.isKeyDown("right")) 
             {
-                setLocation(getX()+2, getY());
+                setLocation(getX()+20, getY());
             }
     }
     }
@@ -78,13 +78,5 @@ public class Blocks extends Actor
             GameScreen gamescreen = (GameScreen)getWorld();
             gamescreen.canNotSpawn(1);
         }
-        // if(isTouching(JBlock.class))
-        // {
-            // setLocation(getX(), getY());
-            // onGround = true;
-            
-            // GameScreen gamescreen = (GameScreen)getWorld();
-            // gamescreen.canNotSpawn(1);
-        // }
     }
 }
