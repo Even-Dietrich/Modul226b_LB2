@@ -37,12 +37,12 @@ public class Blocks extends Actor
             
             if (Greenfoot.isKeyDown("left")) 
             {
-                setLocation(getX()-20, getY());
+                setLocation(getX()-2, getY());
             }
             
             if (Greenfoot.isKeyDown("right")) 
             {
-                setLocation(getX()+20, getY());
+                setLocation(getX()+2, getY());
             }
     }
     }
@@ -54,9 +54,6 @@ public class Blocks extends Actor
             setLocation(getX(), getY()+1);
             nextBlock();
         }
-       
-
-       
     }
     
     public void nextBlock()
@@ -65,17 +62,18 @@ public class Blocks extends Actor
         {
             setLocation(getX(), getY());
             onGround = true;
-            
             GameScreen gamescreen = (GameScreen)getWorld();
+            gamescreen.addScore(20);
+            
             gamescreen.canNotSpawn(1);
-
         }
         if(isTouching(Blocks.class))
         {
             setLocation(getX(), getY());
             onGround = true;
-            
             GameScreen gamescreen = (GameScreen)getWorld();
+            gamescreen.addScore(20);
+            
             gamescreen.canNotSpawn(1);
         }
     }
