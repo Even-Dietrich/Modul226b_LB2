@@ -13,8 +13,8 @@ public class GameScreen extends World
     //int spawnPosition = 250;
     int groundHeight = 380;
     private int cannotspawn = 0;
-    private int time;
-    private int score;
+    int time;
+    int score;
     
     /**
      * Constructor for objects of class GameScreen.
@@ -25,7 +25,7 @@ public class GameScreen extends World
         super(500, 400, 1);
         getBackground().setColor(Color.LIGHT_GRAY);
         getBackground().fill();
-        time = 3000;
+        time = 10000;
         score = 0;
         prepare();
         spawnBlocks();

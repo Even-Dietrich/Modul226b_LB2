@@ -15,8 +15,7 @@ public class Blocks extends Actor
      */
     public void act() 
     {
-        // isKeyPressed();
-        // drop();
+        
     }    
     
     /**
@@ -30,10 +29,10 @@ public class Blocks extends Actor
                 turn(-90);
             }
             
-            /*if (Greenfoot.isKeyDown("down")) 
+            if (Greenfoot.isKeyDown("down")) 
             {
-                turn(90);
-            }*/
+                setLocation(getX(), getY()+10);
+            }
             
             if (Greenfoot.isKeyDown("left")) 
             {
