@@ -10,7 +10,7 @@ import greenfoot.Color;
 public class GameScreen extends World
 {
     int spawnHeight = 0;
-    int spawnPosition = 250;
+    //int spawnPosition = 250;
     int groundHeight = 380;
     private int cannotspawn = 0;
     private int time;
@@ -43,6 +43,9 @@ public class GameScreen extends World
     {
        Actor ground = new Ground();
        addObject(ground, 0, groundHeight);
+       
+       Actor topline = new TopLine();
+       addObject(topline, 0, -5);
     }
     
     /**
@@ -53,7 +56,7 @@ public class GameScreen extends World
     {
         score = score + points;
         showScore();
-        if (score == 200) 
+        if (score == 1000) 
         {
             //Greenfoot.playSound("game-over.wav");
             Greenfoot.stop();
@@ -103,7 +106,7 @@ public class GameScreen extends World
             // Blocks IBlock = new IBlock();
             // addObject(IBlock, spawnPosition, spawnHeight);
             int blockNumber = Greenfoot.getRandomNumber(7);
-            
+            int spawnPosition = Greenfoot.getRandomNumber(350) + 50;
             if (blockNumber == 0)
             {
                 Blocks IBlock = new IBlock();
