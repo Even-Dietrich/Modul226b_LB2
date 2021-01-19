@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=TBlock
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ TBlock\ here.\r\n\ \r\n\ @author\ JBR\r\n\ @version\ 1.0\r\n
+comment0.text=\r\n\ This\ Class\ represents\ the\ S\ Block.\r\n\ \r\n\ @author\ JBR\r\n\ @version\ 3.0\r\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ TBlock\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.text=\r\n\ This\ Method\ calls\ the\ Methods\ of\ Blocks.\r\n
 numComments=2

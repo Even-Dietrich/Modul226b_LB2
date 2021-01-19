@@ -1,17 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class StartScreen here.
+ * This Class represents the StartScreen.
  * 
  * @author JBR 
- * @version 1
+ * @version 4.0
  */
 public class StartScreen extends World
 {
 
     /**
      * Constructor for objects of class StartScreen.
-     * 
      */
     public StartScreen()
     {    
@@ -20,7 +19,7 @@ public class StartScreen extends World
     }
     
     /**
-     * Bereitet die Welt vor. Erzeugt einen Startknopf.
+     * Prepares the StartScreen.
      */
     public void prepare()
     {

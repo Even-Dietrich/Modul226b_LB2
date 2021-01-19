@@ -1,14 +1,13 @@
 #BlueJ class context
 comment0.target=Blocks
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Blocks\ here.\r\n\ \r\n\ @author\ JBR\ \r\n\ @version\ 1.0\r\n
+comment0.text=\r\n\ This\ Class\ is\ the\ "Father"\ of\ all\ Blocks.\ Everthing\ which\ includes\r\n\ the\ Blocks\ is\ coded\ in\ here.\r\n\ \r\n\ @author\ JBR\ \r\n\ @version\ 5.0\r\n
 comment1.params=
-comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Blocks\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.target=void\ isKeyPressed()
+comment1.text=\r\n\ This\ Method\ checks\ if\ a\ Key\ is\ pressed.\r\n
 comment2.params=
-comment2.target=void\ isKeyPressed()
-comment2.text=\r\n\ \r\n
+comment2.target=void\ drop()
+comment2.text=\r\n\ This\ Method\ is\ responsible\ for\ the\ downwards\ movement\ of\ the\ Blocks.\r\n
 comment3.params=
-comment3.target=void\ drop()
-comment4.params=
-comment4.target=void\ nextBlock()
-numComments=5
+comment3.target=void\ nextBlock()
+comment3.text=\r\n\ This\ Method\ checks\ if\ the\ next\ Block\ can\ be\ spawned.\r\n
+numComments=4

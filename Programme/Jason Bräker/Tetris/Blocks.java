@@ -1,25 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Blocks here.
+ * This Class is the "Father" of all Blocks. Everthing which includes
+ * the Blocks is coded in here.
  * 
  * @author JBR 
- * @version 1.0
+ * @version 5.0
  */
 public class Blocks extends Actor
 {
     private boolean onGround = false;
-    /**
-     * Act - do whatever the Blocks wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
-        
-    }    
     
     /**
-     * 
+     * This Method checks if a Key is pressed.
      */
     public void isKeyPressed()
     {
@@ -46,6 +39,9 @@ public class Blocks extends Actor
     }
     }
     
+    /**
+     * This Method is responsible for the downwards movement of the Blocks.
+     */
     public void drop()
     {
         if(onGround == false)
@@ -55,9 +51,12 @@ public class Blocks extends Actor
         }
     }
     
+    /**
+     * This Method checks if the next Block can be spawned.
+     */
     public void nextBlock()
     {
-        if(isTouching(Ground.class))
+       if(isTouching(Ground.class))
         {
             setLocation(getX(), getY());
             onGround = true;
@@ -66,7 +65,7 @@ public class Blocks extends Actor
             
             gamescreen.canNotSpawn(1);
         }
-        if(isTouching(Blocks.class))
+       if(isTouching(Blocks.class))
         {
             setLocation(getX(), getY());
             onGround = true;

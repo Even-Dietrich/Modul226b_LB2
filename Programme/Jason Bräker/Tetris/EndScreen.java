@@ -1,17 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class EndScreen here.
+ * This Class represents the EndScreen.
  * 
  * @author JBR 
- * @version 1
+ * @version 4.0
  */
 public class EndScreen extends World
 {
-
     /**
      * Constructor for objects of class EndScreen.
-     * 
      */
     public EndScreen()
     {    
@@ -20,7 +18,7 @@ public class EndScreen extends World
     }
     
     /**
-     * 
+     * Prepares the EndScreen.
      */
     public void prepare()
     {

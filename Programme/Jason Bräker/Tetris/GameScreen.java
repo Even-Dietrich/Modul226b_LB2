@@ -2,10 +2,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import greenfoot.Color;
 
 /**
- * Write a description of class GameScreen here.
+ * This Class represents the Gamescreen. Everything in this Game is 
+ * happening on the gamescreen.
  * 
  * @author JBR
- * @version 1.0
+ * @version 4.0
  */
 public class GameScreen extends World
 {
@@ -33,12 +34,18 @@ public class GameScreen extends World
         showTime();
     }
     
+    /**
+     * 
+     */
     public void act()
     {
         spawnBlocks();
         countTime();
     }
     
+    /**
+     * Prepares the Gamescreen for playing.
+     */
     private void prepare()
     {
        Actor ground = new Ground();
@@ -49,8 +56,8 @@ public class GameScreen extends World
     }
     
     /**
-     * Fügt einige Punkte zu unserem aktuellen Punktestand hinzu. (Kann auch negativ sein.)
-     * Wenn der Punktestand unter 0 fällt, ist das Spiel vorbei.
+     * Counts the Score while playing. If the score exeeds 1000 the
+     * Game is over.
      */
     public void addScore(int points)
     {
@@ -64,7 +71,7 @@ public class GameScreen extends World
     }
     
     /**
-     * Zeigt den aktuellen Punktestand auf dem Bildschirm an.
+     * Shows the current Score.
      */
     private void showScore()
     {
@@ -72,8 +79,7 @@ public class GameScreen extends World
     }
     
     /**
-     * Zählt die Spielzeit herunter und zeigt sie an. Stoppt das Spiel 
-     * mit einer Gewinnbenachrichtigung, wenn die Zeit abgelaufen ist.
+     * Countdown of the playtime. If the playtime is 0 the game is over.
      */
     private void countTime()
     {
@@ -86,18 +92,25 @@ public class GameScreen extends World
         }
     }
     
+    /**
+     * Shows the current Time on Screen.
+     */
     private void showTime()
     {
         showText("Time: " + time, 440, 385);
     }
-    
+    /**
+     * Zählt die variable cannotspawn -1.
+     */
     public void canNotSpawn(int torf)
     {
         cannotspawn= cannotspawn - torf;
     }
     
     /**
-     * 
+     * Method which Spawns randomly Blocks. But only if cannotspawn is set
+     * to 0. This means it only spawns Blocks if the block before is 
+     * already on Ground.
      */
     public void spawnBlocks()
     {
@@ -142,7 +155,6 @@ public class GameScreen extends World
                 Blocks ZBlock = new ZBlock();
                 addObject(ZBlock, spawnPosition, spawnHeight);
             }
-            
             cannotspawn = 1;
         }
     }

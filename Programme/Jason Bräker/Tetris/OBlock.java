@@ -1,16 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class OBlock here.
+ * This Class represents the O Block.
  * 
  * @author JBR 
- * @version 1.0
+ * @version 3.0
  */
 public class OBlock extends Blocks
 {
     /**
-     * Act - do whatever the OBlock wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * This Method calls the Methods of Blocks.
      */
     public void act() 
     {

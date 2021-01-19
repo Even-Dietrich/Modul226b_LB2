@@ -1,16 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class PlayButton here.
+ * This Class represents the PlayButton.
  * 
  * @author JBR 
- * @version 1
+ * @version 3.0
  */
 public class PlayButton extends Buttons
 {
     /**
-     * Act - do whatever the PlayButton wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Calls the Method checkIfPressed.
      */
     public void act() 
     {
@@ -18,9 +17,7 @@ public class PlayButton extends Buttons
     }   
     
     /**
-     * Kontrolliert ob Knopf gedrückt wurde. 
-     * Wenn ja wird der Gamescreen angezeigt.
-     * 
+     * Checks if the Button was clicked.
      */
     private void checkIfPressed()
     {

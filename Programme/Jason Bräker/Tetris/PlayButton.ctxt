@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=PlayButton
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ PlayButton\ here.\r\n\ \r\n\ @author\ JBR\ \r\n\ @version\ 1\r\n
+comment0.text=\r\n\ This\ Class\ represents\ the\ PlayButton.\r\n\ \r\n\ @author\ JBR\ \r\n\ @version\ 3.0\r\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ PlayButton\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.text=\r\n\ Calls\ the\ Method\ checkIfPressed.\r\n
 comment2.params=
 comment2.target=void\ checkIfPressed()
-comment2.text=\r\n\ Kontrolliert\ ob\ Knopf\ gedr\u00FCckt\ wurde.\ \r\n\ Wenn\ ja\ wird\ der\ Gamescreen\ angezeigt.\r\n\ \r\n
+comment2.text=\r\n\ Checks\ if\ the\ Button\ was\ clicked.\r\n
 numComments=3
