@@ -10,12 +10,12 @@ import greenfoot.Color;
  */
 public class GameScreen extends World
 {
-    int spawnHeight = 0;
+    private int spawnHeight = 0;
     //int spawnPosition = 250;
-    int groundHeight = 380;
+    private int groundHeight = 380;
     private int cannotspawn = 0;
-    int time;
-    public int score;
+    private int time;
+    public static int score;
     
     /**
      * Constructor for objects of class GameScreen.
@@ -63,7 +63,7 @@ public class GameScreen extends World
     {
         score = score + points;
         showScore();
-        if (score == 100) 
+        if (score == 200) 
         {
             Greenfoot.setWorld(new EndScreen());
             //Greenfoot.stop();
