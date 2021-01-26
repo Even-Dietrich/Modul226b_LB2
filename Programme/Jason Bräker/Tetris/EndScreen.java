@@ -24,6 +24,7 @@ public class EndScreen extends World
     {
         showText("Play again?", 200, 50);
         
+        //GameScreen gamescreen = (GameScreen)getWorld();
         //showText("Congrats! You reached "+ GameScreen.score, 200, 70);
         
         Buttons PlayAgain = new PlayButton();

@@ -15,7 +15,7 @@ public class GameScreen extends World
     int groundHeight = 380;
     private int cannotspawn = 0;
     int time;
-    int score;
+    public int score;
     
     /**
      * Constructor for objects of class GameScreen.
@@ -63,17 +63,17 @@ public class GameScreen extends World
     {
         score = score + points;
         showScore();
-        if (score == 1000) 
+        if (score == 100) 
         {
-            //Greenfoot.playSound("game-over.wav");
-            Greenfoot.stop();
+            Greenfoot.setWorld(new EndScreen());
+            //Greenfoot.stop();
         }
     }
     
     /**
      * Shows the current Score.
      */
-    private void showScore()
+    public void showScore()
     {
         showText("Score: " + score, 55, 385); 
     }
@@ -81,24 +81,25 @@ public class GameScreen extends World
     /**
      * Countdown of the playtime. If the playtime is 0 the game is over.
      */
-    private void countTime()
+    public void countTime()
     {
         time--;
         showTime();
         if (time == 0)
         {
-            //showEndMessage();
-            Greenfoot.stop();
+            Greenfoot.setWorld(new EndScreen());
+            //Greenfoot.stop();
         }
     }
     
     /**
      * Shows the current Time on Screen.
      */
-    private void showTime()
+    public void showTime()
     {
         showText("Time: " + time, 440, 385);
     }
+    
     /**
      * Zählt die variable cannotspawn -1.
      */
